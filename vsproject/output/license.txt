@@ -1,0 +1,43 @@
+
+License agreement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO WARRANTY 
+
+INSTANT EYEDROPPER  PROVIDED "AS IS" AND WITHOUT 
+ANY  WARRANTY AS TO  MERCHANTABILITY  OR FITNESS 
+FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES 
+EITHER  EXPRESSED  OR  IMPLIED.  THE AUTHOR WILL 
+NOT BE LIABLE  FOR DATA LOSS,  DAMAGES,  LOSS OF 
+PROFITS  OR ANY OTHER KIND  OF  LOSS WHILE USING 
+OR MISUSING THIS SOFTWARE. 
+
+Distribution of the free version 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You may copy the free version of this 
+software and documentation as you wish, and 
+give exact copies of the original free 
+version to anyone, and distribute the free 
+version of the software and documentation in its 
+unmodified form via electronic means. But you 
+should not charge or requesting donations for 
+any such copies however made and from 
+distributing the software and/or documentation 
+with other products without the author's written 
+permission. 
+
+Registered version 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+One registered copy of Instant Eyedropper may 
+either be used by a single person who uses 
+the software personally on one or more computers, 
+or installed on a single workstation used 
+non-simultaneously by multiple people, but not 
+both.  You may access the registered version of 
+Instant Eyedropper through a network, provided 
+that you have obtained individual licenses for 
+the software covering all workstations that will 
+access the software through the network. 
+
+------------------------------------------------
+(c) 2005-2020 SpiceBrains.com
+

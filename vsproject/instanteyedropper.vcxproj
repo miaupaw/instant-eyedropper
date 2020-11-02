@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83AE14F6-C0E1-420F-AEE6-F966DBFC227C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51020.3</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>output\</OutDir>
+    <IntDir>.vs\_debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>output\</OutDir>
+    <IntDir>.vs\_release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)ie1.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <UACUIAccess>false</UACUIAccess>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <AdditionalManifestDependencies>type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*'</AdditionalManifestDependencies>
+      <AdditionalOptions>notelemetry.obj %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>gdi32.lib user32.lib shell32.lib notelemetry.obj %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalManifestDependencies>type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'</AdditionalManifestDependencies>
+      <AdditionalDependencies />
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\controller.cpp" />
+    <ClCompile Include="src\eyedropper.cpp" />
+    <ClCompile Include="src\glasscatcher.cpp" />
+    <ClCompile Include="src\lib\modaldialogbox\hotcombo.cpp" />
+    <ClCompile Include="src\lib\monitors\monitors.cpp" />
+    <ClCompile Include="src\lib\updater\network.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\options.cpp" />
+    <ClCompile Include="src\lib\modaldialogbox\modaldialogbox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\modaldialogbox\controllerfactory.h" />
+    <ClInclude Include="src\controller.h" />
+    <ClInclude Include="src\delaymessage.h" />
+    <ClInclude Include="src\eyedropper.h" />
+    <ClInclude Include="src\glasscatcher.h" />
+    <ClInclude Include="src\lib\modaldialogbox\combotemplate.h" />
+    <ClInclude Include="src\lib\modaldialogbox\hotcombo.h" />
+    <ClInclude Include="src\lib\modaldialogbox\modcombos.h" />
+    <ClInclude Include="src\lib\monitors\monitors.h" />
+    <ClInclude Include="src\lib\transbrush.h" />
+    <ClInclude Include="src\lib\updater\network.h" />
+    <ClInclude Include="src\lib\updater\updater.h" />
+    <ClInclude Include="src\lib\version.h" />
+    <ClInclude Include="src\lib\versionhelper.h" />
+    <ClInclude Include="src\base.h" />
+    <ClInclude Include="src\mousemon.h" />
+    <ClInclude Include="src\options.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\statics.h" />
+    <ClInclude Include="src\lib\autoload.h" />
+    <ClInclude Include="src\lib\color.h" />
+    <ClInclude Include="src\lib\cursor.h" />
+    <ClInclude Include="src\lib\themed.h" />
+    <ClInclude Include="src\lib\winex.h" />
+    <ClInclude Include="src\lib\dynamic\dynamic.h" />
+    <ClInclude Include="src\lib\dynamic\thread.h" />
+    <ClInclude Include="src\lib\modaldialogbox\controls.h" />
+    <ClInclude Include="src\lib\modaldialogbox\modaldialogbox.h" />
+    <ClInclude Include="src\lib\ini\ini.h" />
+    <ClInclude Include="src\lib\registry\registry.h" />
+    <ClInclude Include="src\lib\ssman\screen.h" />
+    <ClInclude Include="src\lib\win\gwl.h" />
+    <ClInclude Include="src\lib\win\handler.h" />
+    <ClInclude Include="src\lib\win\winbase.h" />
+    <ClInclude Include="src\lib\win\wintop.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\resource\about.bmp" />
+    <Image Include="src\resource\general.ico" />
+    <Image Include="src\resource\winnie.bmp" />
+    <Image Include="src\resource\winnie_d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource\instanteyedropper.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

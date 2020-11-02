@@ -1,0 +1,16 @@
+vsproject/debug
+vsproject/release
+*.opendb
+*.suo
+*.sdf
+*.opensdf
+*.exe
+*.zip
+*.manifest
+*.ilk
+*.chm
+*.aps
+*.vs
+*.user
+eyedropper.ini
+

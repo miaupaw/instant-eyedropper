@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{cd56d363-4b53-48af-a6f8-1fab44c51919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\dynamic">
+      <UniqueIdentifier>{e6a3793b-e57e-4654-aa8f-2ea638ee7bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lib\ini">
+      <UniqueIdentifier>{a1431af7-3007-4483-91f5-7e8dcac204eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\registry">
+      <UniqueIdentifier>{32eacf82-4f3b-441b-a269-f588d7336f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\ssman">
+      <UniqueIdentifier>{2497e1e0-792b-4c06-8fe4-44cbb9657097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\win">
+      <UniqueIdentifier>{7de1a016-7257-4560-8dac-bb41a3b7fbcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\monitors">
+      <UniqueIdentifier>{0dc2be8e-42f6-4df6-b6d7-b359ffe6c258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\updater">
+      <UniqueIdentifier>{7b9d4729-1d6e-4787-b6c3-283c1cefe0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\modaldialogbox">
+      <UniqueIdentifier>{4e18c78e-1374-4e19-8b0c-de88f210fa97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eyedropper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\modaldialogbox\modaldialogbox.cpp">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\monitors\monitors.cpp">
+      <Filter>Source Files\lib\monitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\modaldialogbox\hotcombo.cpp">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glasscatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\updater\network.cpp">
+      <Filter>Source Files\lib\updater</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\ini\ini.h">
+      <Filter>Source Files\lib\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\registry\registry.h">
+      <Filter>Source Files\lib\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\ssman\screen.h">
+      <Filter>Source Files\lib\ssman</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\win\gwl.h">
+      <Filter>Source Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\win\handler.h">
+      <Filter>Source Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\win\winbase.h">
+      <Filter>Source Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\win\wintop.h">
+      <Filter>Source Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="src\controller.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eyedropper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mousemon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\options.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\statics.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\dynamic\dynamic.h">
+      <Filter>Source Files\lib\dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\dynamic\thread.h">
+      <Filter>Source Files\lib\dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\modaldialogbox\controls.h">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\modaldialogbox\modaldialogbox.h">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\autoload.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\color.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\cursor.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\themed.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\winex.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\monitors\monitors.h">
+      <Filter>Source Files\lib\monitors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\transbrush.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\updater\updater.h">
+      <Filter>Source Files\lib\updater</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\modaldialogbox\hotcombo.h">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\modaldialogbox\modcombos.h">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\version.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\modaldialogbox\combotemplate.h">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glasscatcher.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\modaldialogbox\controllerfactory.h">
+      <Filter>Source Files\lib\modaldialogbox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\delaymessage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\updater\network.h">
+      <Filter>Source Files\lib\updater</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\versionhelper.h">
+      <Filter>Source Files\lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\resource\about.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\resource\general.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\resource\winnie.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\resource\winnie_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource\instanteyedropper.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

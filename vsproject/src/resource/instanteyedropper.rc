@@ -1,0 +1,99 @@
+/////////////////////////////////////////////////////////////////////////////
+// reassembled
+
+#include "../resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#define APSTUDIO_READONLY_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_READONLY_SYMBOLS
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+// version info section 
+1 VERSIONINFO
+    FILEVERSION     vsfile
+    PRODUCTVERSION  vsproduct
+    FILEOS          VOS__WINDOWS32
+    FILETYPE        VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904E4" /* US English, Windows ANSI codepage */
+        {
+            VALUE "CompanyName",        "SpiceBrains\000"
+            VALUE "FileDescription",    "Color detection tool\000"
+            VALUE "FileVersion",        vsfilestr "\000"
+            VALUE "ProductName",        "Instant Eyedropper\000"
+            VALUE "ProductVersion",     vsproductstr "\000"
+            VALUE "InternalName",       "Instant Eyedropper\000"
+            VALUE "LegalCopyright",     "\251 SpiceBrains.com\000"
+            VALUE "OriginalFilename",   "instanteyedropper.exe\000"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0409, 1252
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "general.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+// Bitmap
+IDB_EYEDROPPER          BITMAP                  "winnie.bmp"
+IDB_EYEDROPPERDARK      BITMAP                  "winnie_d.bmp"
+IDB_ABOUT               BITMAP                  "about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+// Dialog (special units not pixels)
+IDD_DIALOG DIALOGEX 0, 0, 287, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Instant Eyedropper Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "", IDC_TAB, "SysTabControl32", 0x0, 7, 7, 273, 126
+    GROUPBOX        "General:",      IDCG_GENERAL, 15, 24, 92, 57
+        CONTROL         "Launch on Startup", IDCK_STARTUP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 22, 37, 80, 10
+        CONTROL         "Dark Theme",        IDCK_THEME,   "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 22, 51, 80, 10
+        CONTROL         "Copy to Clipboard", IDCK_CPTOCPB, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 22, 65, 80, 10
+
+    GROUPBOX        "Color Code:", IDCG_FORMAT, 113, 24, 158, 57
+        COMBOBOX                      IDCB_FORMAT,   120, 37, 76, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+        LTEXT           "Precision:", IDCT_PRCN,     204, 39, 30, 8
+        COMBOBOX                      IDCB_PRCN,     238, 37, 25, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+        LTEXT           " Template:", IDCT_TEMPLATE, 119, 61, 35, 9
+        COMBOBOX                      IDCB_TEMPLATE, 158, 59, 105, 30, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+
+    GROUPBOX        "Mode:", IDCG_MODE, 15, 83, 40, 41
+        CONTROL         "Drag",  IDCR_DRAG,  "Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 22, 95, 30, 10
+        CONTROL         "Click", IDCR_CLICK, "Button", BS_AUTORADIOBUTTON | WS_TABSTOP, 22, 108, 30, 10
+
+    GROUPBOX        "Zoom:", IDCG_ZOOM, 61, 83, 46, 41
+        COMBOBOX         IDCB_ZOOM,  69, 99, 30, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+
+    GROUPBOX        "Hotkey:", IDCG_HOTKEY, 113, 83, 158, 41
+        COMBOBOX         IDCB_MOD0,  120, 99,  30, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+        COMBOBOX         IDCB_MOD1,  154, 99,  30, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+        COMBOBOX         IDCB_MOD2,  190, 99,  30, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+        LTEXT       "+", IDCT_PLUS,  220, 101, 10, 8
+        COMBOBOX         IDCB_VKEY,  227, 99,  36, 30, CBS_DROPDOWN     | WS_VSCROLL | WS_TABSTOP
+
+    CONTROL         "", IDCO_ABOUT, "Static", SS_OWNERDRAW, 16, 28, 255, 97
+        LTEXT           "0.0.0.0",                  IDCT_VERSION,        93,  56,  26,  8
+        LTEXT           "Home:",                    IDCT_HOME,           94,  92,  24,  8
+        LTEXT           "\xa9 2005-2020",              IDCT_COPYRIGHT,   93,  103, 44,  8
+        LTEXT           "instant-eyedropper.com",   IDCT_IEYEDROPPERURL, 118, 92,  101, 8
+        LTEXT           "Konstantin Yagola",        IDCT_AUTHOR,         139, 103, 120,  8
+        PUSHBUTTON      "Check for updates",        IDB_UPDATE,          93,  67,  70, 14
+
+    PUSHBUTTON      "OK",     IDOK,     170, 138, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 230, 138, 50, 14
+END
+
+/////////////////////////////////////////////////////////////////////////////
