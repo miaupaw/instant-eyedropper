@@ -86,7 +86,7 @@ private:
             fileinfo info = newestversioninfo(host, uri);
             if (!(version(_currentversion) < version(info.versionnumber))) 
             {   
-                _button.settext("Up-to-dated");
+                _button.settext("Up-to-date");
                 _button.disable();
             }
 

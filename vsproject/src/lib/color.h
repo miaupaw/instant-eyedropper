@@ -284,7 +284,7 @@ public:
         sstr.str(""); sstr << s; string sat = sstr.str();
         sstr.str(""); sstr << l; string lit = sstr.str();
 
-        string out = _template_hsv;
+        string out = _template_hsl;
 
         // делаем из шаблона реальное значение
         out = regex_replace(out, regex("\\((h|H)\\)"), hue);
