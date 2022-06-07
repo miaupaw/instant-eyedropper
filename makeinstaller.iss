@@ -5,7 +5,7 @@
 
 [Setup]
 AppName              = {#appname}
-AppVerName           = {#appname} {#appversion}
+AppVersion           = {#appversion}
 AppPublisher         = Spicebrains
 AppPublisherURL      = http://www.instant-eyedropper.com/
 DefaultDirName       = {pf}\InstantEyedropper
