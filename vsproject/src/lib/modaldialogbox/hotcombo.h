@@ -72,7 +72,7 @@ static vkey virtualkeys[] =
 // дополнительный набор виртуалкеев
 #define ADDVKCOUNT sizeof addvkeys / sizeof addvkeys[0]
 static vkey addvkeys[] =
-    {   {0x00, ""}, {0x09, "Tab"}, {0x0D, "Enter"}, {0x5D, "Menu"} };
+    {   {0x00, ""}, {0x09, "Tab"}, {0x0D, "Enter"}, {0x5D, "Menu"}, {0x2C, "PrtScn"} };
 
 /***********************************************************************************************************/
 /* сабклассинг комбо */
