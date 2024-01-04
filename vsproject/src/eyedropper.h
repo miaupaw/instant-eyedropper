@@ -90,8 +90,26 @@ public:
         x = vpt.x;  y = vpt.y;
 
         // вычислить цвет
-        color = GetPixel(sshdc, vpt.x, vpt.y);
-        
+        // color = GetPixel(sshdc, vpt.x, vpt.y);
+
+        // sampling more pixels around the area and averaging their values
+        COLORREF colorSum = 0;
+        int numPixels = 0;
+
+        for (int i = -2; i <= 2; ++i) {
+            for (int j = -2; j <= 2; ++j) {
+                COLORREF color = GetPixel(sshdc, vpt.x + i, vpt.y + j);
+                colorSum += color;
+                ++numPixels;
+            }
+        }
+
+        COLORREF averageColor = RGB(
+            GetRValue(colorSum) / numPixels,
+            GetGValue(colorSum) / numPixels,
+            GetBValue(colorSum) / numPixels
+        );
+
         // правим координаты для окошка чтобы оно не вылазило
         if (monitors.ok()) correct_pt = correction(pt);
 
